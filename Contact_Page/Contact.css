@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  box-sizing: border-box;
+
+}
+
+body{
+  overflow: hidden;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial;
+  padding: 30px 150px 15px 100px;
+  background-color: aliceblue;
+  align-content: center !important;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+ul>li:hover {
+  text-decoration: aliceblue;
+}
+
+.items li {
+  display: inline;
+  margin-right: 15px;
+
+}
+
+#ulist>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+ul>li:hover {
+  text-decoration: underline;
+}
+
+li>button {
+  cursor: pointer;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: solid 1px;
+  height: 30px;
+  width: 6rem;
+}
+
+li>button:hover {
+  background-color: black;
+  color: white;
+}
+
+#Contact-heading {
+  margin-top: 8rem;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+form {
+  padding: 5px;
+  position: relative;
+  left: 600px;
+  
+}
+
+form > label, form > input , form > textarea{
+  margin:8px 0;
+}
+
+button{
+  width:3.2rem;
+  height:2em;
+  transform:translateX(7.3rem);
+  border-radius:5px;
+}
+
+button:hover{
+
+  background-color:black;
+  color:white;
+
+}
+
+
+
+p{
+  text-align: center;
+  margin-top:2em;
+}

@@ -1,0 +1,103 @@
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  /* border: 1px solid red; */
+  padding: 30px 30px 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+ul>li:hover{
+  text-decoration: underline;
+}
+
+.items li {
+  display: inline;
+  margin-right: 15px;
+
+}
+
+#ulist>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+li>button {
+  cursor: pointer;
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: solid 1px;
+  height: 30px;
+  width: 6rem;
+}
+
+li>button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+#h1 {
+  margin-top: 8rem;
+  text-align: center;
+
+}
+
+hr {
+  margin: 20px 0;
+}
+
+#lorem {
+  text-align-last: center;
+  text-align: center;
+  margin: 0 40px;
+  line-height: 23px;
+}
+
+
+#flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3.5rem;
+}
+
+figure{
+ border:1px gray solid;
+ padding-bottom:15px;
+ border-radius: 10px;
+}
+
+
+div>figure>img {
+  border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+}
+
+figcaption {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+samp {
+  display: block;
+  text-align: center;
+  margin-top: 2.5rem;
+}

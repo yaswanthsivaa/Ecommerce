@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Navigation Bar */
+#links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#ulist li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#ulist li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+#ulist li a:hover {
+  text-decoration: underline;
+}
+
+.items li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.items li button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Main Section */
+main {
+  margin-top: 120px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#Login-heading {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+hr {
+  margin: 15px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name{
+  position: relative;
+  right:40px;
+}
+
+form label {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#btn {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#btn:hover {
+  background-color: #0056b3;
+}
+
+small {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+small i {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#yash {
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+/* Responsive Design */
+

@@ -1,0 +1,165 @@
+/* General styles */
+body {
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+#links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 150px 15px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  z-index: 10;
+}
+
+.items li {
+  display: inline;
+  margin-right: 15px;
+}
+
+#ulist>li>a {
+  text-decoration: none;
+  color: black;
+}
+
+li>button {
+  padding: 3px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: solid 1px;
+  height: 30px;
+  width: 6rem;
+}
+
+li>button:hover {
+  background-color: black;
+  color: white;
+}
+
+ul>li:hover {
+  text-decoration: underline;
+}
+
+.part2 {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+#product-heading {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+span > button {
+  margin-right: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 2rem 5%;
+}
+
+#grid > div {
+  text-align: center;
+  border: 1px solid gray;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#grid > div:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+center > button:hover {
+  background-color: whitesmoke;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  #links {
+    padding: 20px 50px;
+  }
+
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #product-heading {
+    font-size: 2.5rem;
+  }
+
+  span > button {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #links {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  #links .items {
+    margin-top: 10px;
+  }
+
+  #grid {
+    grid-template-columns: 1fr;
+  }
+
+  #product-heading {
+    font-size: 2rem;
+  }
+
+  span > button {
+    font-size: 12px;
+    margin: 3px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #links {
+    padding: 10px 10px;
+  }
+
+  li>button {
+    height: auto;
+    font-size: 12px;
+    width: auto;
+  }
+
+  #product-heading {
+    font-size: 1.5rem;
+  }
+
+  span > button {
+    font-size: 10px;
+    padding: 1px 5px;
+  }
+
+  #grid {
+    margin: 1rem 2%;
+  }
+}

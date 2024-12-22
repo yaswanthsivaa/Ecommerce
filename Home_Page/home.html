@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-Page</title>
+  <link rel="stylesheet" href="/Home_Page/home.css">
+ 
+  <script src="/Cart_Page/cart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav id="links">
+    <div class="items" id="heading">
+      <h1 id="nav_1">Ecommerce</h1>
+    </div>
+    <ul class="items" id="ulist">
+      <li><a href="/Home_Page/home.html">Home</a></li>
+      <li><a href="/Product_Page/Product.html">Products</a></li>
+      <li><a href="/About_Page/About.html">About</a></li>
+      <li><a href="/Contact_Page/Contact.html">Contact</a></li>
+    </ul>
+    <div class="items">
+      <li><button onclick="location.href='/loginPage/loginPage.html'"><i class="fa-solid fa-right-to-bracket" style="margin-right:8px;"></i>Login</button></li>
+      <li><button onclick="location.href='/registerPage/registerPage.html'"><i class="fa-solid fa-user-plus" style="margin-right:8px;"></i>Register</button></li>
+      <li><button onclick="location.href='/Cart_Page/Cart.html'"><i class="fa-solid fa-cart-shopping" style="margin-right:8px;"></i>Cart(<span id="cartValue">0</span>)</button></li>
+    </div>
+  </nav>
+
+  <section id="section_1">
+    <div id="banner">
+      <img src="/main.png (1).jpg" alt="banner_image">
+      <div id="banner_text">
+        <p class="banner_heding" style="font-size: 40px;">New Season Arrivals</p>
+        <p class="banner_paragraph" style="margin-top:20px;font-size: 20px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little <span style='display: block;'>bit longer</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section_2">
+    <h1 class="section_2_item" style="font-size: 40px;">Latest Products</h1>
+    <hr>
+    <span id="categories">
+      <button id="all" onclick="filtering('all')" style="border:1px solid;">All</button>
+      <button id="mens-category" onclick="filtering(`men's clothing`)" style="border:1px solid;">Men's Clothing</button>
+      <button id="womens-category" onclick="filtering(`women's clothing`)" style="border:1px solid;">Women's Clothing</button>
+      <button id="Jewelery-category" onclick="filtering('jewelery')" style="border:1px solid;">Jewellery</button>
+      <button id="electronics-category" onclick="filtering('electronics')" style="border:1px solid;">Electronics</button>
+    </span>
+
+    <section id="grid"></section>
+
+    <p style="text-align: center;">Made with <span style='color:red;'>&#10084;</span> by <span style="text-decoration: underline;">Yaswanth</span></p>
+  </section>
+</body>
+
+</html>
